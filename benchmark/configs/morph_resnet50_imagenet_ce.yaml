@@ -1,0 +1,21 @@
+model:
+  backbone: 'resnet50'
+  num_backbone_features: 2048
+  pretraining_scheme: 'imagenet'
+
+training:
+  num_epochs: 50
+  batch_size: 50
+  lr: 0.001
+  optimizer: 'adam'
+  adam_betas: [0.9, 0.999]
+  adam_eps: 0.00000001
+
+datasets:
+  training: ''
+  eval:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
