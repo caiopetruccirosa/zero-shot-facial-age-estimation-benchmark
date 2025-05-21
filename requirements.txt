@@ -15,5 +15,6 @@ opencv-python
 albumentations
 insightface
 onnxruntime
-onnxruntime-gpu
+# onnxruntime-gpu
 rich
+ipykernel

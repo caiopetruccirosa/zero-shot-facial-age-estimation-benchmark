@@ -1,21 +1,19 @@
 model:
+  head_type: str
   backbone: 'resnet50'
-  num_backbone_features: 2048
+  input_size: (3, 256, 256)
   pretraining_scheme: 'imagenet'
 
 training:
-  num_epochs: 50
-  batch_size: 50
-  lr: 0.001
+  n_epochs: 50
+  improve_epochs_patience: 10
+  batch_size: 64
+  learning_rate: 0.001
   optimizer: 'adam'
-  adam_betas: [0.9, 0.999]
-  adam_eps: 0.00000001
+  betas: [0.9, 0.999]
+  eps: 0.00000001
 
 datasets:
-  training: ''
-  eval:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  training_set: CLAP2016
+  training_set_folds: subject_exclusive_folds.yaml
+  evaluation_sets: [ AFAD, AgeDB, CACD2000, FG-NET, IMDB, MORPH, UTKFace ]

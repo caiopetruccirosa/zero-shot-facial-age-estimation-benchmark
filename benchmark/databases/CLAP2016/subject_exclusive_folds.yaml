@@ -1,0 +1,4 @@
+folds:
+- train: [0]
+  valid: [1]
+  test: [2]

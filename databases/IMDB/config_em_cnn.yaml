@@ -1,4 +1,0 @@
-folder_based_folds: 
-- train: [0,1,2,3,4,5]
-  valid: [6,7]
-  test: [8,9]
